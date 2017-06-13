@@ -15,6 +15,13 @@
 		1DE075811EEFE42E002FB874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0757F1EEFE42E002FB874 /* LaunchScreen.storyboard */; };
 		1DE0758C1EEFE42F002FB874 /* DesktopFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0758B1EEFE42F002FB874 /* DesktopFunctionTests.m */; };
 		1DE075971EEFE42F002FB874 /* DesktopFunctionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE075961EEFE42F002FB874 /* DesktopFunctionUITests.m */; };
+		1DE075A91EEFE5E2002FB874 /* FunctionWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE075A81EEFE5E2002FB874 /* FunctionWindow.m */; };
+		1DE075B01EEFE635002FB874 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE075AB1EEFE635002FB874 /* BaseNavigationViewController.m */; };
+		1DE075B11EEFE635002FB874 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE075AD1EEFE635002FB874 /* BaseTabBarViewController.m */; };
+		1DE075B21EEFE635002FB874 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE075AF1EEFE635002FB874 /* BaseViewController.m */; };
+		1DE075B91EEFE64D002FB874 /* JBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE075B41EEFE64D002FB874 /* JBMainViewController.m */; };
+		1DE075BA1EEFE64D002FB874 /* JBMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE075B61EEFE64D002FB874 /* JBMessageViewController.m */; };
+		1DE075BB1EEFE64D002FB874 /* JBMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE075B81EEFE64D002FB874 /* JBMyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,20 @@
 		1DE075921EEFE42F002FB874 /* DesktopFunctionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesktopFunctionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE075961EEFE42F002FB874 /* DesktopFunctionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesktopFunctionUITests.m; sourceTree = "<group>"; };
 		1DE075981EEFE42F002FB874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE075A71EEFE5E2002FB874 /* FunctionWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionWindow.h; sourceTree = "<group>"; };
+		1DE075A81EEFE5E2002FB874 /* FunctionWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionWindow.m; sourceTree = "<group>"; };
+		1DE075AA1EEFE635002FB874 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		1DE075AB1EEFE635002FB874 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		1DE075AC1EEFE635002FB874 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		1DE075AD1EEFE635002FB874 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		1DE075AE1EEFE635002FB874 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1DE075AF1EEFE635002FB874 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1DE075B31EEFE64D002FB874 /* JBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBMainViewController.h; sourceTree = "<group>"; };
+		1DE075B41EEFE64D002FB874 /* JBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBMainViewController.m; sourceTree = "<group>"; };
+		1DE075B51EEFE64D002FB874 /* JBMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBMessageViewController.h; sourceTree = "<group>"; };
+		1DE075B61EEFE64D002FB874 /* JBMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBMessageViewController.m; sourceTree = "<group>"; };
+		1DE075B71EEFE64D002FB874 /* JBMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBMyViewController.h; sourceTree = "<group>"; };
+		1DE075B81EEFE64D002FB874 /* JBMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBMyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +122,9 @@
 		1DE075701EEFE42E002FB874 /* DesktopFunction */ = {
 			isa = PBXGroup;
 			children = (
+				1DE075A61EEFE5B9002FB874 /* base */,
+				1DE075A51EEFE597002FB874 /* viewController */,
+				1DE075A41EEFE587002FB874 /* view */,
 				1DE075741EEFE42E002FB874 /* AppDelegate.h */,
 				1DE075751EEFE42E002FB874 /* AppDelegate.m */,
 				1DE075771EEFE42E002FB874 /* ViewController.h */,
@@ -138,6 +162,41 @@
 				1DE075981EEFE42F002FB874 /* Info.plist */,
 			);
 			path = DesktopFunctionUITests;
+			sourceTree = "<group>";
+		};
+		1DE075A41EEFE587002FB874 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1DE075A71EEFE5E2002FB874 /* FunctionWindow.h */,
+				1DE075A81EEFE5E2002FB874 /* FunctionWindow.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		1DE075A51EEFE597002FB874 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				1DE075B31EEFE64D002FB874 /* JBMainViewController.h */,
+				1DE075B41EEFE64D002FB874 /* JBMainViewController.m */,
+				1DE075B51EEFE64D002FB874 /* JBMessageViewController.h */,
+				1DE075B61EEFE64D002FB874 /* JBMessageViewController.m */,
+				1DE075B71EEFE64D002FB874 /* JBMyViewController.h */,
+				1DE075B81EEFE64D002FB874 /* JBMyViewController.m */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
+		1DE075A61EEFE5B9002FB874 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				1DE075AA1EEFE635002FB874 /* BaseNavigationViewController.h */,
+				1DE075AB1EEFE635002FB874 /* BaseNavigationViewController.m */,
+				1DE075AC1EEFE635002FB874 /* BaseTabBarViewController.h */,
+				1DE075AD1EEFE635002FB874 /* BaseTabBarViewController.m */,
+				1DE075AE1EEFE635002FB874 /* BaseViewController.h */,
+				1DE075AF1EEFE635002FB874 /* BaseViewController.m */,
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +336,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE075791EEFE42E002FB874 /* ViewController.m in Sources */,
+				1DE075B91EEFE64D002FB874 /* JBMainViewController.m in Sources */,
+				1DE075BB1EEFE64D002FB874 /* JBMyViewController.m in Sources */,
+				1DE075B01EEFE635002FB874 /* BaseNavigationViewController.m in Sources */,
+				1DE075A91EEFE5E2002FB874 /* FunctionWindow.m in Sources */,
+				1DE075B11EEFE635002FB874 /* BaseTabBarViewController.m in Sources */,
 				1DE075761EEFE42E002FB874 /* AppDelegate.m in Sources */,
+				1DE075B21EEFE635002FB874 /* BaseViewController.m in Sources */,
+				1DE075BA1EEFE64D002FB874 /* JBMessageViewController.m in Sources */,
 				1DE075731EEFE42E002FB874 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

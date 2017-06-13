@@ -1,13 +1,17 @@
 //
 //  AppDelegate.m
-//  DesktopFunction
+//  DesktopFunctionBall
 //
 //  Created by 茭白 on 2017/6/13.
 //  Copyright © 2017年 茭白. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "BaseNavigationViewController.h"
+#import "JBMainViewController.h"
+#import "JBMessageViewController.h"
+#import "JBMyViewController.h"
+#import "BaseTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +20,58 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    //开启手机网络监测
+    //[self startMonitorNetwork];
+    //设置系统的返回按钮图片
+    UIImage *img = [UIImage imageNamed:@"back"];
+    [[UINavigationBar appearance] setBackIndicatorImage:img];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:img];
+    [self initTabBarView];
     // Override point for customization after application launch.
     return YES;
+}
+
+-(void)initTabBarView
+{
+    
+    UIImage *image=[UIImage imageNamed:@"tabbar_seedoct"];
+    UIImage *selectedImage=[UIImage imageNamed:@"tabbar_seedoctHighed"];
+    selectedImage=[selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //主页面
+    JBMainViewController *mainVC=[[JBMainViewController alloc]init];
+    BaseNavigationViewController *mianNav=[[BaseNavigationViewController alloc]initWithRootViewController:mainVC];
+    //mianNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"主页" image:image tag:0];
+    mianNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"主页" image:image selectedImage:selectedImage];
+    //信息页面
+    JBMessageViewController *messageVC=[[JBMessageViewController alloc]init];
+    messageVC.tabBarItem.title=@"主页";
+    BaseNavigationViewController *messageNav=[[BaseNavigationViewController alloc]initWithRootViewController:messageVC];
+    //messageNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"消息" image:image tag:1];
+    messageNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"信息" image:image selectedImage:selectedImage];
+    
+    //我的页面
+    JBMyViewController *myVC=[[JBMyViewController alloc]init];
+    
+    BaseNavigationViewController *myNav=[[BaseNavigationViewController alloc]initWithRootViewController:myVC];
+    
+    //myNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"我" image:image tag:2];
+    myNav.tabBarItem=[[UITabBarItem alloc]initWithTitle:@"我" image:image selectedImage:selectedImage];
+    
+    
+    BaseTabBarViewController *tabBarVC=[[BaseTabBarViewController alloc]init];
+    
+    [tabBarVC setViewControllers:[NSMutableArray arrayWithObjects:mianNav,messageNav,myNav, nil] animated:YES];
+    
+    
+    
+    //AppDelegate *appdelegate=[UIApplication sharedApplication].delegate;
+    self.window.rootViewController=tabBarVC;
+    
+    //[self setViewControllers:[NSMutableArray arrayWithObjects:mianNav,messageNav,myNav, nil] animated:YES];
+    
 }
 
 
